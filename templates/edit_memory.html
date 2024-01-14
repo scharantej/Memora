@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Memory</title>
+</head>
+<body>
+<h1>Edit Memory</h1>
+<form action="/edit_memory/{{ memory.id }}" method="POST">
+<label for="title">Title:</label>
+<input type="text" name="title" id="title" value="{{ memory.title }}">
+<br>
+<label for="description">Description:</label>
+<textarea name="description" id="description">{{ memory.description }}</textarea>
+<br>
+<input type="submit" value="Save">
+</form>
+</body>
+</html>
+
