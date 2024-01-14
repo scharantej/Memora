@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Memories</title>
+</head>
+<body>
+<h1>Your Memories</h1>
+<div id="memories">
+{% for memory in memories %}
+<div class="memory">
+<h2>{{ memory.title }}</h2>
+<p>{{ memory.description }}</p>
+</div>
+{% endfor %}
+</div>
+</body>
+</html>
+
+
